@@ -1,0 +1,173 @@
+footer{
+    .footer{
+        .footer-outer{
+            background-color: $teamBackGround ;
+            padding: 4% 0;
+            .container{
+                .footer-inner{
+                    .row{
+                        .col-md-3{
+                           .about-us{
+                               list-style-type: none;
+                               padding-left: unset;
+                               margin-bottom: unset;
+                               .footer-heading{
+                                   font-size: 19px;
+                                   font-weight: 500;
+                                   margin-bottom: 35px;
+                                   :first-child{
+                                       color: $primaryYellow;
+                                       position: relative;
+                                       &::after{
+                                           display: block;
+                                           content: '';
+                                           position: absolute;
+                                           bottom: -90%;
+                                           left: 50%;
+                                           transform: translateX(-50%);
+                                           width: 49px;
+                                           height: 2px;
+                                           background-color: $primaryWhite;
+                                       }
+                                   }
+                                   :nth-child(2){
+                                       color: $primaryWhite;
+                                   }
+                               }
+                               .footer-icons{
+                                   a{
+                                       border: 1px solid $primaryGrey;
+                                       padding: 3px 7px;
+                                       justify-content: center;
+                                       i{
+                                           font-size: 11px;
+                                           color: $primaryWhite;
+                                           &::before{
+                                               color: $primaryWhite;
+                                           }
+                                       }
+                                   }
+                               }
+                               li{
+                                   p{
+                                       color: $footerGrey;
+                                   }
+                               }
+                           }
+
+                           .quick-link{
+                               padding: unset;
+                               margin: unset;
+                               list-style: none;
+                               ul{
+                                   list-style: none;
+                                   margin-left: 48px;
+                               }
+                               :first-child{
+                                   list-style: none;
+                                   &::marker{
+                                       content: ''
+                                   }
+                               }
+                               .footer-heading{
+                                   @include footerHeading;
+                               }
+                               li{
+                                   margin-bottom: 6px;
+                                   a{
+                                       color: $footerGrey;
+                                   }
+                                   i{
+                                       color: $primaryYellow;
+                                       font-size: 12px;
+                                       margin-right: 8px;
+                                   }
+                               }
+                           }
+
+                           .company{
+                               padding-left: 0;
+                               margin-bottom: 0;
+                               .footer-heading{
+                                   @include footerHeading;
+                                   :first-child{
+                                       &::after{
+                                           left: 29%;
+                                           width: 46px;
+                                       }
+                                   }
+                               }
+                               ul{
+                                   list-style: none;
+                                   padding-left: 0;
+                                   margin-bottom: 15px;
+                                   display: flex;
+                                   li{
+                                       color: $footerGrey;
+                                       p{
+                                           margin-bottom: 5px;
+                                       }
+                                       i{
+                                           color: $primaryYellow;
+                                           margin-right: 10px;
+                                       }
+                                   }
+                               }
+                           }
+
+                           .gallery{
+                               padding-left: 0;
+                               margin-bottom: 0;
+                               .footer-heading{
+                                   @include footerHeading;
+                                   :first-child{
+                                    &::after{
+                                        width: 41px;
+                                        left: 81%;
+                                    }
+                                   }
+                               }
+                               ul{
+                                padding-left: 0;
+                                margin-bottom: 7px;
+                                margin-top: 40px;
+                                li{
+                                    margin-right: 7px;
+                                    margin-bottom: 7px;
+                                    img{
+                                        width: 80px;
+                                        height: 80px;
+                                    }
+                                }
+                               }
+                           }
+
+                        }
+                    }
+                }
+            }
+        }
+        .copyright{
+            background-color:#1a1f25 ;
+            padding: 19px 0;
+            .container{
+                display: flex;
+                justify-content: space-between;
+                ul{
+                    display: flex;
+                    list-style: none;
+                    padding-left: 0;
+                    margin-bottom: 0;
+                    li{
+                        color: $footerGrey;
+                        font-size: 15px;
+                        margin: 0 10px;
+                        a{
+                            color: $footerGrey;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

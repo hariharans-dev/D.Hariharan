@@ -1,0 +1,270 @@
+$primaryYellow: #f3b412;
+$secondaryYellow: #fba500;
+$primaryDarkBlue: #1f272f;
+$primaryWhite: #ffffff;
+$primaryGrey:  #868686;
+$heroSliderBtn:  #1c1c1c;
+$heroOverlay: #8b8b8b;
+$formDarkYellow:#eb9a00;
+$customContainer: 1180px;
+
+
+$teamBackGround: #21282e;
+$teamDiv:#353e45;
+$teamHover:#13181c;
+
+
+$footerGrey:#979696;
+
+@keyframes show-form{
+    100%{
+        transform: translateY(0%) ;
+    }
+}
+
+@keyframes hide-form{
+    100%{
+        transform: translateY(-1100%) ;
+    }
+}
+
+@mixin  read-btn {
+    background-color: $secondaryYellow;
+     color: $primaryWhite;
+     padding: 14px 20px;
+     font-size: 14px;
+}
+
+@mixin reusable-heading {
+    
+
+    :first-child{
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 34px;
+        color: $secondaryYellow;
+        position: relative;
+        &::after{
+            bottom: -35%;
+            left: -1%;
+            position: absolute;
+            display: block;
+            content: '';
+            width: 44px;
+            height: 2px;
+            background-color: $secondaryYellow;
+        }
+        
+    }
+    :nth-child(2){
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 34px;
+        color: $primaryDarkBlue;
+    }
+    :nth-child(3){
+
+        font-size: 15px;
+        margin-top: 30px;
+        margin-bottom: 25px;
+        color: $primaryGrey;
+    }
+}
+
+@mixin reusable-heading-center {
+        text-align: center;
+        padding: 0 24%;
+        margin-bottom: 40px;
+            :first-child{
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 34px;
+                color: $secondaryYellow;
+                white-space: nowrap;
+                
+            }
+            :nth-child(2){
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 34px;
+                color: $primaryDarkBlue;
+                margin-left: 5px;
+                position: relative;
+                white-space: nowrap;
+                &::after{
+                    bottom: -35%;
+                    left: 0%;
+                    position: absolute;
+                    display: block;
+                    content: '';
+                    width: 48px;
+                    height: 2px;
+                    background-color: $secondaryYellow;
+                }
+            }
+            :nth-child(3){
+                font-size: 15px;
+                margin-top: 30px;
+                margin-bottom: 25px;
+                color: $primaryGrey;
+            }
+        
+}
+
+
+@mixin  hero-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+}
+@mixin  about-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+@mixin black-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+@mixin generic-my {
+    margin: 80px 0px;
+}
+@mixin  generic-mb {
+    margin-bottom: 80px;
+}
+@mixin footerHeading {
+    list-style-type: none !important;
+    font-size: 19px;
+    font-weight: 500;
+    margin-bottom: 35px;
+    :first-child{
+        color: $primaryYellow;
+        position: relative;
+        &::after{
+            display: block;
+            content: '';
+            position: absolute;
+            bottom: -90%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 49px;
+            height: 2px;
+            background-color: $primaryWhite;
+        }
+    }
+    :nth-child(2){
+        color: $primaryWhite;
+    }
+}
+
+@mixin footerHeading992px {
+    list-style-type: none !important;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 35px;
+    :first-child{
+        color: $primaryYellow;
+        position: relative;
+        &::after{
+            display: block;
+            content: '';
+            position: absolute;
+            bottom: -90%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 2px;
+            background-color: $primaryWhite;
+        }
+    }
+    :nth-child(2){
+        color: $primaryWhite;
+    }
+}
+
+@mixin footerHeading768px {
+    list-style-type: none !important;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    :first-child{
+        color: $primaryYellow;
+        position: relative;
+        &::after{
+            display: block;
+            content: '';
+            position: absolute;
+            bottom: -80%;
+            left: 55%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 2px;
+            background-color: $primaryWhite;
+        }
+    }
+    :nth-child(2){
+        color: $primaryWhite;
+    }
+}
+
+@mixin footerHeading576px {
+    list-style-type: none !important;
+    font-size: 19px;
+    font-weight: 500;
+    margin-bottom: 35px;
+    margin-top: 35px;
+    :first-child{
+        color: $primaryYellow;
+        position: relative;
+        &::after{
+            display: block;
+            content: '';
+            position: absolute;
+            bottom: -90%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 49px;
+            height: 2px;
+            background-color: $primaryWhite;
+        }
+    }
+    :nth-child(2){
+        color: $primaryWhite;
+    }
+}
+
+@keyframes changeColor{
+    100%{
+        background-color: $secondaryYellow;
+    }
+}
+@keyframes changeOpacity{
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes showInfo{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes teamHover{
+    100%{
+        background-color: $teamHover;
+    }
+}

@@ -1,0 +1,27 @@
+Header:
+
+top-strip: 
+
+yellow: #fba500
+icons-white: #ffffff
+logo-yellow: #fba500  ,logo-dark: #1f272f,  logo-dark-greyish: #868686
+
+
+hero-section:
+
+hero-slider button: #1c1c1c  ,  hero-overlay: #8b8b8b
+
+
+yellow-hover-overlay: #eccb8a , dark-yellow-hover-overlay: #dfa633
+
+our-team-section-background: #21282e
+our-team-inner-div: #353e45
+our-team-innner-div-hover: #13181c
+
+
+owl-carousel-background: #101518
+
+
+top-footer: #21282e
+
+bottom-fooeter: #1a1f25

@@ -1,0 +1,3675 @@
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { }
+
+
+
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .header{
+        .header-inner{
+            .top-strip{
+                .navbar{
+                    padding: 0;
+                    .container{
+
+                        .top-strip-inner{
+                            i::before{
+                                font-size: 10px;
+                                padding: 5px;
+                            }
+                            span{ 
+                                font-size: 12px;
+                            }
+                            .top-strip-inner-contact{
+                                margin-left: 280px; 
+                                position: relative;
+                                &::before{
+                                    left: -656%;
+                                }
+                                .nav-item{
+                                    margin-right: 3px;
+                                }
+                            }
+                            
+                            .top-strip-inner-social{
+                                .nav-item{
+                                    .nav-link{
+                                        padding-left: 2px;
+                                        padding-right: 2px;
+                                    }
+                                }
+                            }
+                        }
+                        .top-strip-inner ul li{
+                            display: flex;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+            .logo-strip{
+                .navbar{
+                    padding: 10px 0;
+                   
+                }
+                .container{
+                    .logo{
+                        position: absolute;
+                        top: 0%;
+                        left: 15%;
+                        transform: translate(-50%,-50%);
+                        padding-left: 0;
+                        list-style-type: none ;
+                        display: flex;
+                        align-items: center;
+                        li{
+                            img{
+                                width: 50px !important ;
+                            }
+                            p{
+                                font-size: 23px;
+                                margin-bottom: -8px;
+                                font-weight: 500;
+                            }
+                            p ~ p{
+                                font-size: 16px;
+                                margin-bottom: -22px;
+                            }
+                            a{
+                                img{
+                                    width: 60px;
+                                }
+                            }
+                        }
+                        li ~ li{
+                            margin-left: 6px;
+                        }
+                    }
+                    .navbar-nav{
+                        align-items: center;
+                        .nav-item{
+                            .dropdown-toggle{
+                                &::after{
+                                    all: unset;
+                                }
+                                
+                            }
+                            .nav-link{
+                                padding: 5px 8px;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                    .search-icon{
+                        
+                        width: 30px;
+                        height: 30px;
+                        a{
+                            display:flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 2px 12px !important;
+                            i{
+                                font-size: 10px;
+                                color: white;
+                            }
+                        }
+                    }
+                    .navbar{
+                        padding-left: 0;
+                        padding-right: 0;
+                    }
+                }
+            }
+            .hidden-parent{
+                .hidden-search-form{
+                    text-align: center;
+                    input{
+                        font-size: 12px;
+                        width: 40%;
+                    }   
+                    button{
+                        font-size: 12px;
+                        width: 10%;
+                    }
+                }
+            }
+        }
+    }
+    .main{
+        .main-inner{
+            .hero-section{
+                .hero-section-inner{
+                    .carousel{
+    
+                        .carousel-inner{
+                            .carousel-item{
+                                .hero-caption{
+                                    width: 608px;
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%,-50%);
+                                    h1{
+                                        font-size: 40px;
+                                    }
+                                    p{
+                                        font-size: 16px;
+                                        margin-bottom: 25px;
+                                    }
+                                    .read-btn{
+   
+                                        padding: 12px 15px;
+                                        font-size: 14px;
+                                        
+                                    }
+                                }
+                            }
+                            
+                        }
+                        .carousel-control-prev {
+                            .carousel-control-prev-icon {
+                                width: 25px;
+                                height: 100px;
+                                i{
+                                    font-size: 20px;
+                                }
+                                
+                            }
+                        }
+                        .carousel-control-next {
+                            .carousel-control-next-icon {
+                                width: 25px;
+                                height: 100px;
+                                i{
+                                    font-size: 20px;
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+            }
+            
+            .offer{
+                @include generic-mb;
+                .offer-inner{
+                    
+    
+                    .offer-box{
+                        .row{
+                            .col-md-4{
+                                .offer-box-inner{                                   
+                                    .offer-box-inner-caption{
+                                        padding: 16% 3% 5% 3%;
+                                        text-align: center;
+                                        h1{
+                                            font-size: 16px;
+                                        }
+                                        p{
+                                            font-size: 14px;
+                                        }
+                                        .offer-icon{
+                                            top: 0%;
+                                            left: 50%;
+                                            transform: translate(-50%,-50%);
+                                            width: 70px;
+                                            height: 70px;
+                                            i{
+                                                font-size: 21px;
+                                                color: $primaryWhite;
+                                            }
+                                        }
+                                        .read-more-btn{
+                                            @include read-btn;
+                                            font-size: 14px;
+                                            padding: 9px 16px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+            .project{
+                .project-inner{
+                    .project-overlay{
+                        .project-inner-caption{
+                            .reusable-heading-center{
+                                padding: 0 30%;
+                                margin-bottom: 20px;
+                                    :first-child{
+                                        font-size: 28px;
+                                        color: $secondaryYellow;
+                                        white-space: nowrap;
+                                        
+                                    }
+                                    :nth-child(2){
+                                        font-size: 28px;
+                                        margin-left: 5px;
+                                        &::after{
+                                            bottom: -25%;
+                                            left: 14%;
+                                            position: absolute;
+                                            display: block;
+                                            content: '';
+                                            width: 48px;
+                                            height: 2px;
+                                            background-color: $secondaryYellow;
+                                        }
+                                    }
+                                    :nth-child(3){
+                                        display: none;
+                                    }
+                                }
+    
+                                .project-tab{
+                                    
+                                    .nav{
+                                        margin-bottom: 30px;
+                                        .nav-item{
+                                            margin: 0 7px;
+                                            .nav-link{
+                                                border-radius: 0;
+                                                padding: 8px 18px;
+                                                font-size: 13px;
+                                            }
+                                        }
+                                    }
+                                    .tab-content{
+                                        overflow: hidden;
+                                        .tab-pane{
+                                            .owl-carousel{
+    
+                                                .yellow-overlay-parent{
+                                                    position: relative;
+                                                    &:hover .yellow-overlay{
+                                                        animation: changeOpacity 300ms ease-in forwards;
+                                                    }
+                                                    .yellow-overlay{
+    
+                                                        .yellow-overlay-icons i{
+                                                            color: $primaryWhite;
+                                                            font-size: 12px;
+                                                            background-color: $primaryDarkBlue;
+                                                            padding: 11px;
+                                                            margin: 0 4px;
+                                                        }
+    
+                                                    }
+                                                }                       
+    
+
+                                                .owl-nav{  
+                                                    .owl-prev{
+                                                        height: 80px;
+                                                        width: 20px;
+                                                    }
+                                                    .owl-next{
+                                                        height: 80px;
+                                                        width: 20px;
+                                                    }
+                                                }
+                                                .owl-stage-outer{
+                                                    .owl-stage{
+                                                        .owl-item{ 
+                                                       
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                        }
+                    }
+                }
+            }
+
+            .choose{
+                @include generic-my;
+                .choose-outer{
+                    
+                    .choose-inner{
+                        .row{
+                            .col-md-6{
+                                .reusable-heading{
+                                    @include reusable-heading;
+                                    margin-bottom: 35px;
+                                }
+                            }
+    
+                            .hidden-info-parent{
+                                margin-bottom: 6px;
+                                .info-animation{
+                                    animation: showInfo 300ms ease-in forwards;
+                                }
+                                .active-heading{
+                                    color: $primaryYellow !important;
+                                }
+                                .active-border{
+                                    border: 1px dashed $primaryYellow !important;
+                                }
+                                .hidden-info-heading{
+                                    border:  1px dashed $primaryGrey;
+                                    padding: 12px 16px;
+                                    display: flex;
+                                    align-items: center;
+                                    color: $primaryGrey;
+                                    cursor:pointer;
+    
+                                    h3{
+                                        font-size: 15px;
+                                        color: inherit;
+                                        margin-bottom: unset;
+                                    }
+                                    i{
+                                        margin-left: auto;
+                                        color:  inherit;
+                                        font-size: 11px;
+                          
+                                    }
+                                }
+                                .hidden-para{
+                                    display: none;
+                                    padding: 12px 16px;
+                                    border: 1px dashed $primaryGrey;
+                                    border-top: 0;
+                                    font-size: 14px;
+                                    p{
+                                        color: $primaryGrey;
+                                        margin-bottom: 8px;
+                                    }
+                                    a{
+                                        color: $primaryYellow;
+                                        font-size: 14px;
+                                        font-weight: 600;
+                                        i{
+                                            margin-left: 5px;
+                                        }
+                                    }
+                                }
+                            }
+
+                            
+                        }
+                    }
+                }
+            }
+
+
+
+            .team{
+                background-color: $teamBackGround;
+                .team-outer{
+                    .container{
+                        .team-inner{
+                            .reusable-heading-center{
+                                @include reusable-heading-center;
+                                :nth-child(2){
+                                    color: $primaryWhite;
+                                    &::after{
+                                        left: -19%;
+                                    }
+                                }
+                                :nth-child(3){
+                                    display: block !important;
+                                    color: rgb(195, 194, 193);
+                                }
+    
+                            }
+                            .team-member{
+                                .row{
+                                    .col-md-3{ 
+                                        .team-member-caption{
+                                            padding: 20px 0px;
+                                            h6{
+                                                font-size: 16px;
+                                                color:rgb(195, 194, 193);
+                                            }p{
+                                                margin-bottom: 0;
+                                                font-size: 14px;
+                                            }
+                                        }
+                                        .yellow-overlay-parent{
+                                            .yellow-overlay{
+                                            .overlay-icons {
+                                                ul{
+                                                    li{
+                                                        padding: 14px;
+                                                        a{
+                                                            &:hover{
+                                                                text-decoration: none;
+                                                            }
+                                                            i{
+                                                                color: $primaryWhite;
+                                                                font-size: 13px;
+                                                            }
+                                                        }
+                                                    }
+                                                   
+                                                }
+                                                
+                                            }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+            .blog{
+                @include generic-my;
+                .blog-outer{
+                    .container{
+                        .blog-inner{
+                            .reusable-heading-center{
+                                text-align: center;
+                                padding: 0 20%;
+                                margin-bottom: 40px;
+                                    :nth-child(3){
+                                        font-size: 15px;
+                                        margin-top: 30px;
+                                    }
+                            }
+                            .offer-box{
+                                .row{
+                                    .col-md-4{
+                                        .offer-box-inner{
+                                            .offer-box-inner-caption{
+                                                position: relative;
+                                                border: 1px solid gainsboro;
+                                                padding: 16% 4% 5% 4%;
+                                                text-align: center;
+                                                h1{
+                                                    font-size: 16px;
+                                                    font-weight: 600;
+                                                    margin-bottom: 16px;
+                                                }
+                                                p{
+                                                    color: $primaryGrey;
+                                                    font-size: 14px;
+                                                    margin-bottom: 30px;
+                                                }
+                                                .offer-icon{
+                                                    position: absolute;
+                                                    top: 0%;
+                                                    left: 50%;
+                                                    transform: translate(-50%,-50%);
+                                                    width: 50%;
+                                                    height: 45px;
+                                                    border-radius: 26px;
+                                                    border: 3px solid $primaryWhite;
+                                                    display: flex;
+                                                    align-items: center;
+                                                    justify-content: center;
+                                                    background-color: $primaryDarkBlue;
+                                                    padding: 0 0px;
+                                                    i{
+                                                        font-size: 15px;
+                                                        color: $primaryWhite;
+                                                        margin-right: 10px;
+                                                    }
+                                                    span{
+                                                        font-size: 13px;
+                                                        color: $primaryWhite;
+                                                    }
+                                                }
+                                                .read-more-btn{
+                                                    @include read-btn;
+                                                    background-color: $primaryDarkBlue;
+                                                    font-size: 13px;
+                                                    padding: 9px 16px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+    
+                    }
+                }
+            }
+            
+            .review{
+                .review-outer{
+                    .review-inner{
+                        .black-overlay{
+                            .review-inner-heading{
+                                margin-top: 2%;
+                                .reusable-heading-center{
+                                    padding: 0 22%;
+                                    margin-bottom: 0px;
+                                    :first-child{
+                                        font-size: 34px;
+                                    }
+                                    :nth-child(2){
+                                        font-size: 34px;
+                                        &::after{
+                                            left: 16%;
+                                            bottom: -20%;
+                                            width: 43px;
+                                        }
+                                    }
+                                    :nth-child(3)
+                                    {
+                                        margin-bottom: unset;
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+                            .stupid-slider{
+                                top: 68%;
+                                transform: translateY(-50%);
+                                h4{
+                                }
+                                .owl-carousel{
+                                    .owl-stage-outer{
+                                        .owl-stage{
+                                            .owl-item{
+                                                .item{
+                                                    .stupid-slider-inner{
+                                                        margin: 0 auto;
+                                                        width: 54.5%;
+                                                        padding: 4.3% 2%;
+                                                        padding-bottom: 1.5%;
+                                                        .review-img{
+                                                            width: 70px;
+                                                            height: 70px;
+                                                        }
+                                                        h5{
+                                                            font-size: 16px;
+                                                            margin-bottom: 4px;
+                                                        }
+                                                        h6{
+
+                                                            margin-bottom: 20px;
+                                                            font-size: 14px;
+                                                            &::after{
+                                                                bottom: -60%;
+                                                                left: 50%;
+                                                                width: 41px;
+                                                            }
+                                                        }
+                                                        p{
+                                                            margin-bottom: 0;
+                                                            font-size: 12px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .owl-theme{
+                                    .owl-nav{
+                                        margin-top: unset;
+                                        button{
+
+                                        }
+                                        i{
+
+                                            font-size: 10px;
+                                        }
+                                        .owl-prev{
+                                            position: absolute;
+                                            top: 50%;
+                                            left: 19%;
+                                            transform: translateY(-50%);
+                                            width: 23px;
+                                            height: 23px;
+                                        }
+                                        .owl-next{
+                                            position: absolute;
+                                            top: 50%;
+                                            right: 19%;
+                                            transform: translateY(-50%);
+                                            width: 23px;
+                                            height: 23px;
+                                        }
+                                    }
+    
+                                }
+                                
+                            }
+                        }
+                        
+                    }
+                }
+            }
+
+
+
+        }
+    }
+    
+    footer{
+        .footer{
+            .footer-outer{
+                padding: 4% 0;
+                .container{
+                    .footer-inner{
+                        .row{
+                            .col-md-3{
+                               .about-us{
+                                   .footer-heading{
+                                    @include footerHeading992px;
+                                   }
+                                   .footer-icons{
+                                       a{
+                                           border: 1px solid $primaryGrey;
+                                           padding: 3px 7px;
+                                           justify-content: center;
+                                           i{
+                                               font-size: 11px;
+
+                                           }
+                                       }
+                                   }
+                                   li{
+                                       p{
+                                           font-size: 14px
+                                       }
+                                   }
+                               }
+    
+                               .quick-link{
+                                   ul{
+                                       margin-left: 20px
+                                   }
+                                   .footer-heading{
+                                       @include footerHeading992px;
+                                   }
+                                   li{
+                                       margin-bottom: 6px;
+                                       a{
+                                           color: $footerGrey;
+                                           font-size: 14px;
+                                       }
+                                       i{
+                                           color: $primaryYellow;
+                                           font-size: 11px;
+                                           margin-right: 5px;
+                                       }
+                                   }
+                               }
+    
+                               .company{
+                                   padding-left: 0;
+                                   margin-bottom: 0;
+                                   .footer-heading{
+                                       @include footerHeading992px;
+                                       :first-child{
+                                           &::after{
+                                               left: 29%;
+                                               width: 46px;
+                                           }
+                                       }
+                                   }
+                                   ul{
+                                       display: flex;
+                                       li{
+                                           font-size: 14px;
+                                           color: $footerGrey;
+                                           p{
+                                               margin-bottom: 5px;
+                                           }
+                                           i{
+                                               color: $primaryYellow;
+                                               margin-right: 10px;
+                                           }
+                                       }
+                                   }
+                               }
+    
+                               .gallery{
+                                   padding-left: 0;
+                                   margin-bottom: 0;
+                                   .footer-heading{
+                                       @include footerHeading992px;
+                                       :first-child{
+                                        &::after{
+                                            width: 41px;
+                                            left: 81%;
+                                        }
+                                       }
+                                   }
+                                   ul{
+                                       padding-left: 0;
+                                       margin-bottom: 7px;
+                                       margin-top: 40px;
+                                       li{
+                                           margin-right: 7px;
+                                           margin-bottom: 7px;
+                                           img{
+                                               width: 65px;
+                                               height: 65px;
+                                           }
+                                       }
+                                   }
+                               }
+    
+                            }
+                        }
+                    }
+                }
+            }
+            .copyright{
+                .container{
+                    ul{
+                        li{
+                            color: $footerGrey;
+                            font-size: 13px;
+                            margin: 0 10px;
+                            a{
+                                color: $footerGrey;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+  }
+
+
+
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .header{
+        .header-inner{
+            .top-strip{
+                .navbar{
+                    padding: 0;
+                    background-color: $secondaryYellow;
+                    .container{
+                        max-width:  $customContainer;
+                        
+                        .top-strip-inner{
+                            
+                            i::before{
+                                font-size: 10px;
+                                color: $primaryWhite;
+                                border: 1px solid $primaryWhite;
+                                padding: 3px;
+                            }
+                            span{
+                                color: $primaryWhite;
+                                font-size: 12px;
+                            }
+                            .top-strip-inner-contact{
+                                margin-top: 0px;
+                                margin-left: 0px;
+                                position: relative;
+                                display: flex;
+                                justify-content: center;
+                                flex-direction: row;
+                                &::before{
+                                    all: unset;
+                                }
+                                .nav-item{
+                                    margin-right: 60px;
+                                    .nav-link{
+                                        margin-right: 10px;
+                                    }
+                                }
+                            }
+                            
+                            .top-strip-inner-social{
+                            
+                                margin-bottom: 0;
+                                display: flex;
+                                justify-content: center;
+                                flex-direction: row;
+                                .nav-item{
+                                    margin: 0px 5px;
+                                    .nav-link{
+                                        padding: 5px;
+                                    }
+                                }
+                            }
+                        }
+                        .top-strip-inner ul li{
+                            display: flex;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+            .logo-strip{
+                .navbar{
+                    background-color: $primaryWhite;
+                    padding: 15px 0;
+                   
+                }
+                .container{
+                    max-width: $customContainer;
+                    position: relative;
+                    .logo{
+                        position: unset;
+                        top: unset;
+                        left: unset;
+                        -webkit-transform: unset;
+                        transform: unset;
+                        padding-left: 0;
+                        list-style-type: none;
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        margin-left: 16px;
+                        margin-top: 3px;
+                        li{
+                            p{
+                                font-size: 23px;
+                                margin-bottom: -8px;
+                            }
+                            p ~ p{
+                                font-size: 18px;
+                                font-weight: unset;
+                                margin-bottom: -22px;
+                            }
+                            a{
+                                img{
+                                    width: 50px;
+                                }
+                            }
+                        }
+                        li ~ li{
+                            margin-left: 6px;
+                        }
+                    }
+                    .navbar-nav{
+                        align-items: center;
+                        
+                        .nav-item{
+                            .dropdown-toggle{
+                                &::after{
+                                    all: unset;
+                                }
+                                
+                            }
+                            .nav-link{
+                                color: $primaryGrey;
+                                padding: 5px 12px;
+                                &:hover{
+                                    color: $secondaryYellow;
+                                }
+                            }
+                        }
+                        .dropdown-menu{
+                            position: absolute;
+                            top: 76%;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            
+                        }
+                    }
+                    .search-icon{
+                        background-color: $secondaryYellow;
+                        margin-top: 10px;
+                        
+                        width: 36px;
+                        height: 36px;
+                        a{
+                            display:flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 2px 12px !important;
+                            i{
+                                font-size: 12px;
+                                color: white;
+                            }
+                        }
+                    }
+                    .navbar{
+                        padding-left: 0;
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+    }
+    .main{
+        .main-inner{
+            .hero-section{
+                .hero-section-inner{
+                    .carousel{
+    
+                        .carousel-inner{
+                            .carousel-item{
+                                .hero-caption{
+                                    width: 608px;
+                                    top: 50%;
+                                    left: 50%;
+                                    h1{
+                                        font-size: 40px;
+                                    }
+                                    p{
+                                        font-size: 15px;
+                                        margin-bottom: 25px;
+                                    }
+                                    .read-btn{
+   
+                                        padding: 12px 18px;
+                                        font-size: 12px;
+                                        
+                                    }
+                                }
+                            }
+                            
+                        }
+                        .carousel-control-prev {
+                            .carousel-control-prev-icon {
+                                width: 25px;
+                                height: 100px;
+                                i{
+                                    font-size: 20px;
+                                }
+                                
+                            }
+                        }
+                        .carousel-control-next {
+                            .carousel-control-next-icon {
+                                width: 25px;
+                                height: 100px;
+                                i{
+                                    font-size: 20px;
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+            }
+
+            .about{
+                margin-top: 100px;
+                margin-bottom: 100px;
+                .about-inner{
+                    .container{
+                        .row{
+                            .col-md-6{
+                                .about-caption{
+                                     .reusable-heading {
+    
+
+                                        :first-child{
+                                            font-size: 28px;
+                                            
+                                        }
+                                        :nth-child(2){
+                                            font-size: 28px;
+                                        }
+                                        :nth-child(3){
+                                    
+                                            font-size: 13px;
+                                            margin-top: 22px;
+                                            margin-bottom: 25px;
+                                            color: $primaryGrey;
+                                        }
+                                    }
+                                    .learn-more{
+                                        font-size: 13px;
+                                        i{
+                                            margin-left: 8px;
+                                        }
+                                    }
+                                    .about-caption-para{
+                                        p{
+                                            font-size: 13px;
+                                            margin-top: 25px;
+                                            margin-bottom: 20px;
+                                        }
+                                    }
+                                    
+                                    .about-caption-img{
+                                        .about-overlay{
+                                            .about-caption-img-caption{
+                                                width: 92%;
+                                                padding: 10px 40px;
+                                                font-size: 18px;
+                                                :first-child{
+                                                    white-space: nowrap;
+                                                    margin-bottom: 6px;
+                                                }
+                                                :nth-child(2){
+                                                    margin-bottom: 0;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .about-form{
+                                    .about-form-inner{
+                                        padding-top: 50px;
+                                        padding-bottom: 45px;
+                                        padding-left: 5%;
+                                        padding-right: 5%;
+                                        h4{
+                                            font-size: 20px;
+                                   
+                                        }
+                                        .actual-form{
+                                            width: 100%;
+                                            margin-top: 40px;
+                                            form{
+                                                .row{
+                                                    .col-md-6{
+                                                        padding: 0 8px;
+                                                        margin-bottom: 16px;
+                                                        input{
+                                                            font-size: 12px;
+                                                            padding: 10px 16px;
+                                                        }
+                                                    }
+                                                    .col-md-12{
+                                                        padding: 0 8px;
+                                                        margin-bottom: 16px;
+                                                        input{
+                                                            padding: 10px 16px;
+                                                            font-size: 12px;
+                                                        }
+                                                        textarea{
+                                                            padding: 10px 16px;
+                                                            outline: none;
+                                                            margin-bottom: 12px;
+                                                            font-size: 12px;
+                                                        }
+                                                        button{
+                                                            width: 35%;
+                                                            padding: 12px 10px;
+                                                            font-size: 12px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+    
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .offer{
+                @include generic-mb;
+                .offer-inner{
+                    .reusable-heading-center{
+                        text-align: center;
+                        padding: 0 24%;
+                        margin-bottom: 40px;
+                            :first-child{
+                                text-transform: uppercase;
+                                font-weight: 600;
+                                font-size: 28px;
+
+                                
+                            }
+                            :nth-child(2){
+                                font-weight: 600;
+                                font-size: 28px;
+                            }
+                            :nth-child(3){
+                                font-size: 13px;
+                            }
+                        }
+    
+                    .offer-box{
+                        .row{
+                            .col-md-4{
+                                .offer-box-inner{                                   
+                                    .offer-box-inner-caption{
+                                        padding: 20% 3% 5% 3%;
+                                        text-align: center;
+                                        h1{
+                                            font-size: 15px;
+                                            margin-bottom: 15px;
+                                        }
+                                        p{
+                                            font-size: 13px;
+                                        }
+                                        .offer-icon{
+                                            top: 0%;
+                                            left: 50%;
+                                            transform: translate(-50%,-50%);
+                                            width: 60px;
+                                            height: 60px;
+                                            i{
+                                                font-size: 18px;
+                                            }
+                                        }
+                                        .read-more-btn{
+                                            @include read-btn;
+                                            font-size: 13px;
+                                            padding: 9px 16px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .project{
+                .project-inner{
+                    .project-overlay{
+                        .project-inner-caption{
+                            .reusable-heading-center{
+                                padding: 0 30%;
+                                margin-bottom: 20px;
+                                margin-top: 10px;
+                                    :first-child{
+                                        font-size: 25px;
+                                        color: $secondaryYellow;
+                                        white-space: nowrap;
+                                        
+                                    }
+                                    :nth-child(2){
+                                        font-size: 25px;
+                                        margin-left: 5px;
+                                        &::after{
+                                            bottom: -25%;
+                                            left: 14%;
+                                            width: 29px;
+                                            height: 2px;
+                                            background-color: $secondaryYellow;
+                                        }
+                                    }
+                                    :nth-child(3){
+                                        display: none;
+                                    }
+                                }
+    
+                                .project-tab{
+                                    
+                                    .nav{
+                                        margin-bottom: 20px;
+                                        .nav-item{
+                                            margin: 0 7px;
+                                            .nav-link{
+                                                border-radius: 0;
+                                                padding: 8px 18px;
+                                                font-size: 13px;
+                                            }
+                                        }
+                                    }
+                                    .tab-content{
+                                        overflow: hidden;
+                                        .tab-pane{
+                                            .owl-carousel{
+    
+                                                .yellow-overlay-parent{
+                                                    position: relative;
+                                                    &:hover .yellow-overlay{
+                                                        animation: changeOpacity 300ms ease-in forwards;
+                                                    }
+                                                    .yellow-overlay{
+    
+                                                        .yellow-overlay-icons i{
+                                                            color: $primaryWhite;
+                                                            font-size: 12px;
+                                                            background-color: $primaryDarkBlue;
+                                                            padding: 11px;
+                                                            margin: 0 4px;
+                                                        }
+    
+                                                    }
+                                                }                       
+    
+
+                                                .owl-nav{  
+                                                    .owl-prev{
+                                                        height: 80px;
+                                                        width: 20px;
+                                                    }
+                                                    .owl-next{
+                                                        height: 80px;
+                                                        width: 20px;
+                                                    }
+                                                }
+                                                .owl-stage-outer{
+                                                    .owl-stage{
+                                                        .owl-item{ 
+                                                            
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                        }
+                    }
+                }
+            }
+
+            .choose{
+                @include generic-my;
+                .choose-outer{
+                    
+                    .choose-inner{
+                        .row{
+                            .col-md-6{
+                                .reusable-heading{
+                                    padding: 0 0%;
+                                    margin-bottom: 25px;
+                                    :first-child{
+                                    text-transform: uppercase;
+                                    font-weight: 600;
+                                    font-size: 28px;
+
+                                
+                                 }
+                                :nth-child(2){
+                                 font-weight: 600;
+                                 font-size: 28px;
+                                }
+                                :nth-child(3){
+                                 font-size: 13px;
+                                }
+                            }
+                            }
+    
+                            .hidden-info-parent{
+                                .hidden-info-heading{
+    
+                                    h3{
+                                        font-size: 14px;
+                                        color: inherit;
+                                        margin-bottom: unset;
+                                    }
+                                    i{
+                                        margin-left: auto;
+                                        color:  inherit;
+                                        font-size: 11px;
+                          
+                                    }
+                                }
+                                .hidden-para{
+                                    display: none;
+                                    padding: 12px 16px;
+                                    border: 1px dashed $primaryGrey;
+                                    border-top: 0;
+                                    font-size: 13px;
+                                    p{
+                                        color: $primaryGrey;
+                                        margin-bottom: 8px;
+                                    }
+                                    a{
+                                        color: $primaryYellow;
+                                        font-size: 14px;
+                                        font-weight: 600;
+                                        i{
+                                            margin-left: 5px;
+                                        }
+                                    }
+                                }
+                            }
+
+                            
+                        }
+                    }
+                }
+            }
+
+            .team{
+                background-color: $teamBackGround;
+                .team-outer{
+                    .container{
+                        .team-inner{
+                            .reusable-heading-center{
+                                @include reusable-heading-center;
+                                :first-child{
+                                    font-size: 28px;
+                                }
+                                :nth-child(2){
+                                    font-size: 28px;
+                                    color: $primaryWhite;
+                                    &::after{
+                                        left: -19%;
+                                        width: 30px;
+                                    }
+                                }
+                                :nth-child(3){
+                                    display: block !important;
+                                    font-size: 12px;
+                                }
+    
+                            }
+                            .team-member{
+                                .row{
+                                    .col-md-3{ 
+                                        .team-member-caption{
+                                            padding: 20px 0px;
+                                            h6{
+                                                font-size: 15px;
+                                                color:rgb(195, 194, 193);
+                                            }p{
+                                                margin-bottom: 0;
+                                                font-size: 13px;
+                                            }
+                                        }
+                                        .yellow-overlay-parent{
+                                            .yellow-overlay{
+                                            .overlay-icons {
+                                                ul{
+                                                    li{
+                                                        padding: 8px;
+                                                        a{
+                                                            &:hover{
+                                                                text-decoration: none;
+                                                            }
+                                                            i{
+                                                                color: $primaryWhite;
+                                                                font-size: 11px;
+                                                            }
+                                                        }
+                                                    }
+                                                   
+                                                }
+                                                
+                                            }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .blog{
+                @include generic-my;
+                .blog-outer{
+                    .container{
+                        .blog-inner{
+                            .reusable-heading-center{
+                                text-align: center;
+                                padding: 0 10%;
+                                margin-bottom: 40px;
+                                :first-child{
+                                    font-size: 28px;
+                                }
+                                :nth-child(2)
+                                {
+                                    font-size: 28px;
+                                    &::after{
+                                        left: -55%;
+                                    }
+                                }
+                                :nth-child(3){
+                                    font-size: 15px;
+                                    margin-top: 30px;
+                                    }
+                            }
+                            .offer-box{
+                                .row{
+                                    .col-md-4{
+                                        .offer-box-inner{
+                                            .offer-box-inner-caption{
+                                                position: relative;
+                                                border: 1px solid gainsboro;
+                                                padding: 16% 4% 5% 4%;
+                                                text-align: center;
+                                                h1{
+                                                    font-size: 15px;
+                                                    font-weight: 600;
+                                                    margin-bottom: 16px;
+                                                }
+                                                p{
+                                                    color: $primaryGrey;
+                                                    font-size: 13px;
+                                                    margin-bottom: 30px;
+                                                }
+                                                .offer-icon{
+                                                    position: absolute;
+                                                    top: 0%;
+                                                    left: 50%;
+                                                    transform: translate(-50%,-50%);
+                                                    width: 55%;
+                                                    height: 35px;
+                                                    border-radius: 26px;
+                                                    border: 3px solid $primaryWhite;
+                                                    display: flex;
+                                                    align-items: center;
+                                                    justify-content: center;
+                                                    background-color: $primaryDarkBlue;
+                                                    padding: 0 0px;
+                                                    i{
+                                                        font-size: 13px;
+                                                        color: $primaryWhite;
+                                                        margin-right: 5px;
+                                                    }
+                                                    span{
+                                                        font-size: 12px;
+                                                        color: $primaryWhite;
+                                                    }
+                                                }
+                                                .read-more-btn{
+                                                    @include read-btn;
+                                                    background-color: $primaryDarkBlue;
+                                                    font-size: 12px;
+                                                    padding: 7px 14px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+    
+                    }
+                }
+            }
+
+            .review{
+                .review-outer{
+                    .review-inner{
+                        .black-overlay{
+                            .review-inner-heading{
+                                margin-top: 1%;
+                                .reusable-heading-center{
+                                    padding: 0 22%;
+                                    margin-bottom: 0px;
+                                    :first-child{
+                                        font-size: 27px;
+                                    }
+                                    :nth-child(2){
+                                        font-size: 27px;
+                                        &::after{
+                                            left: 16%;
+                                            bottom: -20%;
+                                            width: 39px;
+                                        }
+                                    }
+                                    :nth-child(3)
+                                    {
+                                        margin-top: 12px;
+                                        margin-bottom: unset;
+                                        font-size: 11px;
+                                    }
+                                }
+                            }
+                            .stupid-slider{
+                                top: 68%;
+                                transform: translateY(-50%);
+                                h4{
+                                }
+                                .owl-carousel{
+                                    .owl-stage-outer{
+                                        .owl-stage{
+                                            .owl-item{
+                                                .item{
+                                                    .stupid-slider-inner{
+                                                        margin: 0 auto;
+                                                        width: 70%;
+                                                        padding: 5% 2%;
+                                                        padding-bottom: 1.5%;
+                                                        .review-img{
+                                                            width: 70px;
+                                                            height: 70px;
+                                                        }
+                                                        h5{
+                                                            font-size: 15px;
+                                                            margin-bottom: 4px;
+                                                        }
+                                                        h6{
+
+                                                            margin-bottom: 20px;
+                                                            font-size: 13px;
+                                                            &::after{
+                                                                bottom: -60%;
+                                                                left: 50%;
+                                                                width: 41px;
+                                                            }
+                                                        }
+                                                        p{
+                                                            margin-bottom: 0;
+                                                            font-size: 11px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .owl-theme{
+                                    .owl-nav{
+                                        margin-top: unset;
+                                        button{
+
+                                        }
+                                        i{
+
+                                            font-size: 10px;
+                                        }
+                                        .owl-prev{
+                                            position: absolute;
+                                            top: 50%;
+                                            left: 10%;
+                                            transform: translateY(-50%);
+                                            width: 23px;
+                                            height: 23px;
+                                        }
+                                        .owl-next{
+                                            position: absolute;
+                                            top: 50%;
+                                            right: 10%;
+                                            transform: translateY(-50%);
+                                            width: 23px;
+                                            height: 23px;
+                                        }
+                                    }
+    
+                                }
+                                
+                            }
+                        }
+                        
+                    }
+                }
+            }
+
+
+        }
+
+        
+    }
+
+    footer{
+        .footer{
+            .footer-outer{
+                padding: 4% 0;
+                .container{
+                    .footer-inner{
+                        .row{
+                            .col-md-3{
+                               .about-us{
+                                   .footer-heading{
+                                    @include footerHeading768px;
+                                   }
+                                   .footer-icons{
+                                       a{
+                                           border: 1px solid $primaryGrey;
+                                           padding: 2px 6px;
+                                           justify-content: center;
+                                           i{
+                                               font-size: 10px;
+
+                                           }
+                                       }
+                                   }
+                                   li{
+                                       p{
+                                           font-size: 12px
+                                       }
+                                   }
+                               }
+    
+                               .quick-link{
+                                   ul{
+                                       margin-left: 9px
+                                   }
+                                   .footer-heading{
+                                       @include footerHeading768px;
+                                   }
+                                   li{
+                                       margin-bottom: 3px;
+                                       a{
+                                           color: $footerGrey;
+                                           font-size: 12px;
+                                       }
+                                       i{
+                                           color: $primaryYellow;
+                                           font-size: 9px;
+                                           margin-right: 0px;
+                                       }
+                                   }
+                               }
+    
+                               .company{
+                                   padding-left: 0;
+                                   margin-bottom: 0;
+                                   .footer-heading{
+                                       @include footerHeading768px;
+                                       margin-bottom: 28px;
+                                       :first-child{
+                                           &::after{
+                                               left: 41%;
+                                              
+                                           }
+                                       }
+                                   }
+                                   ul{
+                                       display: flex;
+                                       margin-bottom: 10px;
+                                       li{
+                                           font-size: 12px;
+                                           color: $footerGrey;
+                                           p{
+                                               margin-bottom: 3px;
+                                           }
+                                           i{
+                                               color: $primaryYellow;
+                                               margin-right: 10px;
+                                           }
+                                       }
+                                   }
+                               }
+    
+                               .gallery{
+                                   padding-left: 0;
+                                   margin-bottom: 0;
+                                   .footer-heading{
+                                       @include footerHeading768px;
+                                       :first-child{
+                                        &::after{
+                                            width: 41px;
+                                            left: 81%;
+                                        }
+                                       }
+                                   }
+                                   ul{
+                                       padding-left: 0;
+                                       margin-bottom: 3px;
+                                       margin-top: 33px;
+                                       li{
+                                           margin-right: 3px;
+                                           margin-bottom: 3px;
+                                           img{
+                                               width: 48px;
+                                               height: 48px;
+                                           }
+                                       }
+                                   }
+                               }
+    
+                            }
+                        }
+                    }
+                }
+            }
+            .copyright{
+                .container{
+                    ul{
+                        li{
+                            color: $footerGrey;
+                            font-size: 11px;
+                            margin: 0 10px;
+                            a{
+                                color: $footerGrey;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+ }
+
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .header{
+        .header-inner{
+            .top-strip{
+                .navbar{
+                    padding: 0;
+                    background-color: $secondaryYellow;
+                    .container{
+                        max-width:  $customContainer;
+                        
+                        .top-strip-inner{
+                            
+                            i::before{
+                                font-size: 15px;
+                                color: $primaryWhite;
+                                border: 1px solid $primaryWhite;
+                                padding: 6px;
+                            }
+                            span{
+                                color: $primaryWhite;
+                                font-size: 16px;
+                            }
+                            .top-strip-inner-contact{
+                                margin-top: 22px;
+                                margin-left: 0px;
+                                position: relative;
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: center;
+                                &::before{
+                                    all: unset;
+                                }
+                                .nav-item{
+                                    margin: 0px 13px;
+                                    .nav-link{
+                                        margin-right: 10px;
+                                    }
+                                }
+                            }
+                            
+                            .top-strip-inner-social{
+                                margin-left: 0px !important;
+                                margin-bottom: 22px;
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: center;
+                                .nav-item{
+                                    margin: 20px 13px ;
+                                    .nav-link{
+                                        padding-left: 0px;
+                                        padding-right: 0px;
+                                    }
+                                }
+                            }
+                        }
+                        .top-strip-inner ul li{
+                            display: flex;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+            .logo-strip{
+                .navbar{
+                    background-color: $primaryWhite;
+                    padding: 15px 0;
+                   
+                }
+                .container{
+                    max-width: $customContainer;
+                    position: relative;
+                    .logo{
+                        position: unset;
+                        top: unset;
+                        left: unset;
+                        transform: unset;
+                        padding-left: 0;
+                        list-style-type: none ;
+                        display: flex;
+                        align-items: center;
+                        margin-left: 16px;
+                        margin-top: 3px;
+                        li{
+                            p{
+                                font-size: 23px;
+                                margin-bottom: -8px;
+                            }
+                            p ~ p{
+                                font-size: 18px;
+                                font-weight: unset;
+                                margin-bottom: -22px;
+                            }
+                            a{
+                                img{
+                                    width: 60px;
+                                }
+                            }
+                        }
+                        li ~ li{
+                            margin-left: 6px;
+                        }
+                    }
+                    .navbar-nav{
+                        align-items: center;
+                        .nav-item{
+                            .dropdown-toggle{
+                                &::after{
+                                    all: unset;
+                                }
+                                
+                            }
+                            .nav-link{
+                                color: $primaryGrey;
+                                padding: 5px 12px;
+                                &:hover{
+                                    color: $secondaryYellow;
+                                }
+                            }
+                        }
+                        .dropdown-menu{
+                            position: absolute;
+                            top: 76%;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            
+                        }
+                    }
+                    .search-icon{
+                        background-color: $secondaryYellow;
+                        margin-top: 10px;
+                        
+                        width: 36px;
+                        height: 36px;
+                        a{
+                            display:flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 2px 12px !important;
+                            i{
+                                font-size: 12px;
+                                color: white;
+                            }
+                        }
+                    }
+                    .navbar{
+                        padding-left: 0;
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+    }
+    .main{
+        .main-inner{
+            .hero-section{
+                .hero-section-inner{
+                    .carousel{
+    
+                        .carousel-inner{
+                            .carousel-item{
+                                padding: 130px 0;
+                                background-image: url(./assets/img/hero.jpg);
+                                background-size: cover;
+                                .hero-caption{
+                                    width: 400px;
+                                    top: 50%;
+                                    left: 50%;
+                                    h1{
+                                        font-size: 30px;
+                                    }
+                                    p{
+                                        font-size: 13px;
+                                        margin-bottom: 20px;
+                                    }
+                                    .read-btn{
+   
+                                        padding: 10px 16px;
+                                        font-size: 12px;
+                                        
+                                    }
+                                }
+                            }
+                            
+                        }
+                        .carousel-control-prev {
+                            .carousel-control-prev-icon {
+                                width: 15px;
+                                height: 65px;
+                                i{
+                                    font-size: 13px;
+                                }
+                                
+                            }
+                        }
+                        .carousel-control-next {
+                            .carousel-control-next-icon {
+                                width: 15px;
+                                height: 65px;
+                                i{
+                                    font-size: 13px;
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+            }
+
+            .about{
+                margin-top: 100px;
+                margin-bottom: 100px;
+                .about-inner{
+                    .container{
+                        .row{
+                            .col-md-6{
+                                .about-caption{
+                                     .reusable-heading {
+    
+
+                                        :first-child{
+                                            font-size: 34px;
+                                            
+                                        }
+                                        :nth-child(2){
+                                            font-size: 34px;
+                                        }
+                                        :nth-child(3){
+                                    
+                                            font-size: 15px;
+                                            margin-top: 22px;
+                                            margin-bottom: 25px;
+                                        }
+                                    }
+                                    .learn-more{
+                                        font-size: 14px;
+                                        i{
+                                            margin-left: 8px;
+                                        }
+                                    }
+                                    .about-caption-para{
+                                        p{
+                                            font-size: 15px;
+                                            margin-top: 25px;
+                                            margin-bottom: 20px;
+                                        }
+                                    }
+                                    
+                                    .about-caption-img{
+                                        .about-overlay{
+                                            .about-caption-img-caption{
+                                                width: 92%;
+                                                padding: 25px 40px;
+                                                font-size: 22px;
+                                                :first-child{
+                                                    white-space: nowrap;
+                                                    margin-bottom: 6px;
+                                                }
+                                                :nth-child(2){
+                                                    margin-bottom: 0;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .about-form{
+                                    margin-top: 50px;
+                                    .about-form-inner{
+                                        padding-top: 50px;
+                                        padding-bottom: 45px;
+                                        padding-left: 5%;
+                                        padding-right: 5%;
+                                        h4{
+                                            font-size: 22px;
+                                   
+                                        }
+                                        .actual-form{
+                                            width: 100%;
+                                            margin-top: 40px;
+                                            form{
+                                                .row{
+                                                    .col-md-6{
+                                                        padding: 0 8px;
+                                                        margin-bottom: 16px;
+                                                        input{
+                                                            font-size: 15px;
+                                                            padding: 10px 16px;
+                                                        }
+                                                    }
+                                                    .col-md-12{
+                                                        padding: 0 8px;
+                                                        margin-bottom: 16px;
+                                                        input{
+                                                            padding: 10px 16px;
+                                                            font-size: 15px;
+                                                        }
+                                                        textarea{
+                                                            padding: 10px 16px;
+                                                            outline: none;
+                                                            margin-bottom: 12px;
+                                                            font-size: 15px;
+                                                        }
+                                                        button{
+                                                            width: 35%;
+                                                            padding: 12px 10px;
+                                                            font-size: 15px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+    
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .offer{
+                @include generic-mb;
+                .offer-inner{
+                    .reusable-heading-center{
+                        text-align: center;
+                        padding: 0 8%;
+                        margin-bottom: 40px;
+                            :first-child{
+                                font-size: 34px;
+                            }
+                            :nth-child(2){
+                                font-size: 34px;
+                            }
+                            :nth-child(3){
+                                font-size: 15px;
+                            }
+                        }
+    
+                    .offer-box{
+                        .row{
+                            .col-md-4{
+                                margin-bottom: 80px;
+                                .offer-box-inner{                                   
+                                    .offer-box-inner-caption{
+                                        padding: 12% 3% 5% 3%;
+                                        text-align: center;
+                                        h1{
+                                            font-size: 20px;
+                                            margin-bottom: 15px;
+                                        }
+                                        p{
+                                            font-size: 15px;
+                                        }
+                                        .offer-icon{
+                                            width: 90px;
+                                            height: 90px;
+                                            i{
+                                                font-size: 26px;
+                                            }
+                                        }
+                                        .read-more-btn{
+                                            @include read-btn;
+                                            font-size: 15px;
+                                            padding: 9px 16px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .project{
+                margin-top: 0px;
+                .project-inner{
+                    position: unset;
+                    > img{
+                        display: none;
+                    }
+                    .project-overlay{
+                        position: unset;
+                        top: unset;
+                        bottom: unset;
+                        left: unset;
+                        right: unset;
+                        background-color: unset;
+                        .project-inner-caption{
+                            position: unset;
+                            transform: unset;
+                            top: unset;
+                            left: unset;
+                            .reusable-heading-center{
+                                padding: 0 0%;
+                                margin-bottom: 30px;
+                                    :first-child{
+                                        font-size: 34px;                                        
+                                    }
+                                    :nth-child(2){
+                                        text-transform: uppercase;
+                                        font-weight: 600;
+                                        font-size: 34px;
+                                        color: $primaryDarkBlue;
+                                        margin-left: 5px;
+                                        position: relative;
+                                        white-space: nowrap;
+                                        &::after{
+                                            width: 35px;
+                                            height: 2px;
+                                        }
+                                    }
+                                   
+                                   
+                                }
+    
+                                .project-tab{
+                                    
+                                    .nav{
+                                        margin-bottom: 25px;
+                                        .nav-item{
+                                            margin: 7px 7px;
+                                            .nav-link{
+                                                padding: 7px 14px;
+                                                font-size: 15px;
+                                            }
+                                        }
+                                    }
+                                    .tab-content{
+                                        .tab-pane{
+                                            .owl-carousel{
+    
+                                                .yellow-overlay-parent{
+                                                    .yellow-overlay{
+    
+                                                        .yellow-overlay-icons i{
+                                                            font-size: 16px;
+                                                            padding: 15px;
+                                                            margin: 0 4px;
+                                                        }
+    
+                                                    }
+                                                }                       
+    
+
+                                                .owl-nav{  
+                                                    .owl-prev{
+                                                        height: 80px;
+                                                        width: 20px;
+                                                    }
+                                                    .owl-next{
+                                                        height: 80px;
+                                                        width: 20px;
+                                                    }
+                                                }
+                                                .owl-stage-outer{
+                                                    .owl-stage{
+                                                        .owl-item{ 
+                                                            
+                                                            padding: 0 2px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                        }
+                    }
+                }
+            }
+
+
+            .team{
+                background-color: $teamBackGround;
+                .team-outer{
+                    .container{
+                        .team-inner{
+                            .reusable-heading-center{
+                                @include reusable-heading-center;
+                                padding: 0;
+                                :first-child{
+                                    font-size: 34px;
+                                }
+                                :nth-child(2){
+                                    font-size: 34px;
+                                    color: $primaryWhite;
+                                    &::after{
+                                        left: -19%;
+                                        width: 38px;
+                                    }
+                                }
+                                :nth-child(3){
+                                    display: block !important;
+                                    font-size: 15px;
+                                }
+    
+                            }
+                            .team-member{
+                                .row{
+                                    .col-md-3{ 
+                                        margin-bottom: 40px;
+                                        .team-member-caption{
+                                            padding: 20px 0px;
+                                            h6{
+                                                font-size: 20px;
+                                                color:rgb(195, 194, 193);
+                                            }p{
+                                                margin-bottom: 0;
+                                                font-size: 16px;
+                                            }
+                                        }
+                                        .yellow-overlay-parent{
+                                            .yellow-overlay{
+                                            .overlay-icons {
+                                                ul{
+                                                    li{
+                                                        padding: 0px 32px;
+                                                        a{
+                                                            &:hover{
+                                                                text-decoration: none;
+                                                            }
+                                                            i{
+                                                                color: $primaryWhite;
+                                                                font-size: 20px;
+                                                            }
+                                                        }
+                                                    }
+                                                   
+                                                }
+                                                
+                                            }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+            .blog{
+                @include generic-my;
+                .blog-outer{
+                    .container{
+                        .blog-inner{
+                            .reusable-heading-center{
+                                text-align: center;
+                                padding: 0 10%;
+                                margin-bottom: 40px;
+                                :first-child{
+                                    font-size: 34px;
+                                }
+                                :nth-child(2)
+                                {
+                                    font-size: 34px;
+                                    &::after{
+                                        left: -55%;
+                                    }
+                                }
+                                :nth-child(3){
+                                    font-size: 15px;
+                                    margin-top: 30px;
+                                    }
+                            }
+                            .offer-box{
+                                .row{
+                                    .col-md-4{
+                                        margin-bottom: 60px;
+                                        .offer-box-inner{
+                                            .offer-box-inner-caption{
+                                                position: relative;
+                                                border: 1px solid gainsboro;
+                                                padding: 8% 4% 5% 4%;
+                                                text-align: center;
+                                                h1{
+                                                    font-size: 22px;
+                                                    font-weight: 600;
+                                                    margin-bottom: 16px;
+                                                }
+                                                p{
+                                                    color: $primaryGrey;
+                                                    font-size: 16px;
+                                                    margin-bottom: 30px;
+                                                }
+                                                .offer-icon{
+                                                    position: absolute;
+                                                    top: 0%;
+                                                    left: 50%;
+                                                    transform: translate(-50%,-50%);
+                                                    width: 50%;
+                                                    height: 45px;
+                                                    border-radius: 26px;
+                                                    border: 3px solid $primaryWhite;
+                                                    display: flex;
+                                                    align-items: center;
+                                                    justify-content: center;
+                                                    background-color: $primaryDarkBlue;
+                                                    padding: 0 0px;
+                                                    i{
+                                                        font-size: 18px;
+                                                        color: $primaryWhite;
+                                                        margin-right: 14px;
+                                                        margin-bottom: 3px;
+                                                    }
+                                                    span{
+                                                        font-size: 16px;
+                                                        color: $primaryWhite;
+                                                    }
+                                                }
+                                                .read-more-btn{
+                                                    @include read-btn;
+                                                    background-color: $primaryDarkBlue;
+                                                    font-size: 16px;
+                                                    padding: 9px 16px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+    
+                    }
+                }
+            }
+
+
+            .review{
+                .review-outer{
+                    .review-inner{
+                        .black-overlay{
+                            .review-inner-heading{
+                                margin-top: 1%;
+                                .reusable-heading-center{
+                                    padding: 0 0%;
+                                    margin-bottom: 0px;
+                                    :first-child{
+                                        font-size: 20px;
+                                    }
+                                    :nth-child(2){
+                                        margin-left: 0px;
+                                        font-size: 20px;
+                                        &::after{
+                                            left: 16%;
+                                            bottom: -20%;
+                                            width: 30px;
+                                        }
+                                    }
+                                    :nth-child(3)
+                                    {
+                                        display: none;
+                                    }
+                                }
+                            }
+                            .stupid-slider{
+                            
+                                top: 63%;
+                                transform: translateY(-50%);
+                                h4{
+                                }
+                                .owl-carousel{
+                                    .owl-stage-outer{
+                                        .owl-stage{
+                                            .owl-item{
+                                                .item{
+                                                    .stupid-slider-inner{
+                                                        margin: 0 auto;
+                                                        width: 90%;
+                                                        padding: 5% 2%;
+                                                        padding-bottom: 1.5%;
+                                                        .review-img{
+                                                            width: 50px;
+                                                            height: 50px;
+                                                        }
+                                                        h5{
+                                                            font-size: 15px;
+                                                            margin-bottom: 4px;
+                                                        }
+                                                        h6{
+        
+                                                            margin-bottom: 17px;
+                                                            font-size: 13px;
+                                                            &::after{
+                                                                bottom: -60%;
+                                                                left: 50%;
+                                                                width: 41px;
+                                                            }
+                                                        }
+                                                        p{
+                                                            margin-bottom: 0;
+                                                            font-size: 11px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .owl-theme{
+                                    .owl-nav{
+                                        margin-top: unset;
+                                        button{
+        
+                                        }
+                                        i{
+        
+                                            font-size: 9px;
+                                        }
+                                        .owl-prev{
+                                            position: absolute;
+                                            top: 50%;
+                                            left: -0.2%;
+                                            transform: translateY(-50%);
+                                            width: 20px;
+                                            height: 20px;
+                                        }
+                                        .owl-next{
+                                            position: absolute;
+                                            top: 50%;
+                                            right: -0.2%;
+                                            transform: translateY(-50%);
+                                            width: 20px;
+                                            height: 20px;
+                                        }
+                                    }
+        
+                                }
+                                
+                            }
+                        }
+                        
+                    }
+                }
+            }
+
+        }
+    }
+
+    footer{
+        .footer{
+            .footer-outer{
+                padding: 4% 0;
+                .container{
+                    .footer-inner{
+                        .row{
+                            .col-md-3{
+                               .about-us{
+                                   .footer-heading{
+                                    @include footerHeading576px;
+                                   }
+                                   .footer-icons{
+                                       a{
+                                           border: 1px solid $primaryGrey;
+                                           padding: 3px 7px;
+                                           justify-content: center;
+                                           i{
+                                               font-size: 11px;
+
+                                           }
+                                       }
+                                   }
+                                   li{
+                                       p{
+                                           font-size: 14px
+                                       }
+                                   }
+                               }
+    
+                               .quick-link{
+                                   ul{
+                                       margin-left: 20px
+                                   }
+                                   .footer-heading{
+                                       @include footerHeading576px;
+                                   }
+                                   li{
+                                       margin-bottom: 6px;
+                                       a{
+                                           color: $footerGrey;
+                                           font-size: 14px;
+                                       }
+                                       i{
+                                           color: $primaryYellow;
+                                           font-size: 11px;
+                                           margin-right: 5px;
+                                       }
+                                   }
+                               }
+    
+                               .company{
+                                   padding-left: 0;
+                                   margin-bottom: 0;
+                                   .footer-heading{
+                                       @include footerHeading576px;
+                                       :first-child{
+                                           &::after{
+                                               left: 29%;
+                                               width: 46px;
+                                           }
+                                       }
+                                   }
+                                   ul{
+                                       display: flex;
+                                       li{
+                                           font-size: 14px;
+                                           color: $footerGrey;
+                                           p{
+                                               margin-bottom: 5px;
+                                           }
+                                           i{
+                                               color: $primaryYellow;
+                                               margin-right: 10px;
+                                           }
+                                       }
+                                   }
+                               }
+    
+                               .gallery{
+                                   padding-left: 0;
+                                   margin-bottom: 0;
+                                   .footer-heading{
+                                       @include footerHeading576px;
+                                       :first-child{
+                                        &::after{
+                                            width: 41px;
+                                            left: 81%;
+                                        }
+                                       }
+                                   }
+                                   ul{
+                                       padding-left: 0;
+                                       margin-bottom: 7px;
+                                       margin-top: 40px;
+                                       li{
+                                           margin-right: 7px;
+                                           margin-bottom: 7px;
+                                           img{
+                                               width: 90px;
+                                               height: 90px;
+                                           }
+                                       }
+                                   }
+                               }
+    
+                            }
+                        }
+                    }
+                }
+            }
+            .copyright{
+                .container{
+                    ul{
+                        li{
+                            color: $footerGrey;
+                            font-size: 12px;
+                            margin: 0 10px;
+                            a{
+                                color: $footerGrey;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    
+
+ }
+
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+
+    .header{
+        .header-inner{
+            .top-strip{
+                .navbar{
+                    padding: 0;
+                    background-color: $secondaryYellow;
+                    .container{
+                        max-width:  $customContainer;
+                        
+                        .top-strip-inner{
+                            
+                            i::before{
+                                font-size: 15px;
+                                color: $primaryWhite;
+                                border: 1px solid $primaryWhite;
+                                padding: 6px;
+                            }
+                            span{
+                                color: $primaryWhite;
+                                font-size: 11px;
+                            }
+                            .top-strip-inner-contact{
+                                margin-top: 22px;
+                                margin-left: 0px;
+                      
+                                display: flex;
+                                justify-content: center;
+                                position: relative;
+                                flex-direction: row;
+                                position: relative;
+                                &::before{
+                                    all: unset;
+                                }
+                                .nav-item{
+                                    margin-right: 10px;
+                                    .nav-link{
+                                        margin-right: 5px;
+                                        i{
+                                            &::before{
+                                                font-size: 12px;
+                                            }
+                                            
+                                        }
+                                    }
+                                }
+                            }
+                            
+                            .top-strip-inner-social{
+                                margin-bottom: 22px;
+                                display: flex;
+                                margin-bottom: 22px;
+                                justify-content: center;
+                                flex-direction: row;
+                                .nav-item{
+                                    margin: 10px 12px;
+                                    .nav-link{
+                                        padding-left: 0px;
+                                        padding-right: 0px;
+                                        i{
+                                            &::before{
+                                                font-size: 13px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .top-strip-inner ul li{
+                            display: flex;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+            .logo-strip{
+                .navbar{
+                    background-color: $primaryWhite;
+                    padding: 15px 0;
+                   
+                }
+                .container{
+                    max-width: $customContainer;
+                    position: relative;
+                    .logo{
+                        position: unset;
+                        top: unset;
+                        left: unset;
+                        transform: unset;
+                        padding-left: 0;
+                        list-style-type: none ;
+                        display: flex;
+                        align-items: center;
+                        margin-left: 10px;
+                        margin-top: 3px;
+                        li{
+                            p{
+                                font-size: 20px;
+                                margin-bottom: -8px;
+                            }
+                            p ~ p{
+                                font-size: 15px;
+                                font-weight: unset;
+                                margin-bottom: -22px;
+                            }
+                            a{
+                                img{
+                                    width: 45px;
+                                }
+                            }
+                        }
+                        li ~ li{
+                            margin-left: 6px;
+                        }
+                    }
+                    .navbar-nav{
+                        align-items: center;
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                        .nav-item{
+                            .dropdown-toggle{
+                                &::after{
+                                    all: unset;
+                                }
+                                
+                            }
+                            .nav-link{
+                                color: $primaryGrey;
+                                padding: 5px 12px;
+                                &:hover{
+                                    color: $secondaryYellow;
+                                }
+                            }
+                        }
+                        .dropdown-menu{
+                            position: absolute;
+                            top: 76%;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            
+                        }
+                    }
+                    .search-icon{
+                        background-color: $secondaryYellow;
+                        margin-top: 10px;
+                        
+                        width: 36px;
+                        height: 36px;
+                        a{
+                            display:flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 2px 12px !important;
+                            i{
+                                font-size: 12px;
+                                color: white;
+                            }
+                        }
+                    }
+                    .navbar{
+                        padding-left: 0;
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+    }
+    .main{
+        .main-inner{
+            .hero-section{
+                .hero-section-inner{
+                    .carousel{
+    
+                        .carousel-inner{
+                            .carousel-item{
+                                padding: 130px 0;
+                                background-image: url(./assets/img/hero.jpg);
+                                background-size: cover;
+                                background-position: center;
+                                .hero-caption{
+                                    width: 250px;
+                                    top: 50%;
+                                    left: 50%;
+                                    h1{
+                                        font-size: 25px;
+                                    }
+                                    p{
+                                        font-size: 14px;
+                                    }
+                                    .read-btn{
+   
+                                        padding: 6px 8px;
+                                        font-size: 10px;
+                                        
+                                    }
+                                }
+                            }
+                            
+                        }
+                        .carousel-control-prev {
+                            .carousel-control-prev-icon {
+                                width: 11px;
+                                height: 40px;
+                                i{
+                                    font-size: 10px;
+                                }
+                                
+                            }
+                        }
+                        .carousel-control-next {
+                            .carousel-control-next-icon {
+                                width: 11px;
+                                height: 40px;
+                                i{
+                                    font-size: 10px;
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+            }
+
+            .about{
+                margin-top: 100px;
+                margin-bottom: 100px;
+                .about-inner{
+                    .container{
+                        .row{
+                            .col-md-6{
+                                .about-caption{
+                                     .reusable-heading {
+    
+
+                                        :first-child{
+                                            font-size: 20px;
+                                            
+                                        }
+                                        :nth-child(2){
+                                            font-size: 20px;
+                                        }
+                                        :nth-child(3){
+                                    
+                                            font-size: 13px;
+                                            margin-top: 22px;
+                                            margin-bottom: 25px;
+                                        }
+                                    }
+                                    .learn-more{
+                                        font-size: 13px;
+                                        i{
+                                            margin-left: 8px;
+                                        }
+                                    }
+                                    .about-caption-para{
+                                        p{
+                                            font-size: 13px;
+                                        }
+                                    }
+                                    
+                                    .about-caption-img{
+                                        .about-overlay{
+                                            .about-caption-img-caption{
+                                                width: 92%;
+                                                padding: 3px 18px;
+                                                font-size: 14px;
+                                                :first-child{
+                                                    white-space: nowrap;
+                                                    margin-bottom: 6px;
+                                                }
+                                                :nth-child(2){
+                                                    margin-bottom: 0;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .about-form{
+                                    margin-top: 50px;
+                                    .about-form-inner{
+                                        padding-top: 40px;
+                                        padding-bottom: 40px;
+                                        padding-left: 5%;
+                                        padding-right: 5%;
+                                        h4{
+                                            font-size: 20px;
+                                   
+                                        }
+                                        .actual-form{
+                                            width: 100%;
+                                            margin-top: 40px;
+                                            form{
+                                                .row{
+                                                    .col-md-6{
+                                                        input{
+                                                            font-size: 13px;
+                                                        }
+                                                    }
+                                                    .col-md-12{
+
+                                                        input{
+                                                            font-size: 13px;
+                                                        }
+                                                        textarea{
+                                                            margin-bottom: 0px;
+                                                            font-size: 13px;
+                                                        }
+                                                        button{
+                                                            width: 40%;
+                                                            padding: 12px 10px;
+                                                            font-size: 13px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+    
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .offer{
+                @include generic-mb;
+                .offer-inner{
+                    .reusable-heading-center{
+                        text-align: center;
+                        padding: 0 0%;
+                        margin-bottom: 40px;
+                            :first-child{
+                                font-size: 22px;
+                                
+                            }
+                            :nth-child(2){
+                                font-size: 22px;
+                                &::after{
+                                    width: 32px;
+                                }
+                            }
+                            :nth-child(3){
+                                font-size: 13px;
+                            }
+                        }
+    
+                    .offer-box{
+                        .row{
+                            .col-md-4{
+                                margin-bottom: 60px;
+                                .offer-box-inner{                                   
+                                    .offer-box-inner-caption{
+                                        padding: 16% 3% 5% 3%;
+                                        text-align: center;
+                                        h1{
+                                            font-size: 16px;
+                                            margin-bottom: 15px;
+                                        }
+                                        p{
+                                            font-size: 13px;
+                                        }
+                                        .offer-icon{
+                                            width: 65px;
+                                            height: 65px;
+                                            i{
+                                                font-size: 20px;
+                                            }
+                                        }
+                                        .read-more-btn{
+                                            @include read-btn;
+                                            font-size: 13px;
+                                            padding: 9px 16px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .project{
+                margin-top: 0px;
+                .project-inner{
+                    position: unset;
+                    > img{
+                        display: none;
+                    }
+                    .project-overlay{
+                        position: unset;
+                        top: unset;
+                        bottom: unset;
+                        left: unset;
+                        right: unset;
+                        background-color: unset;
+                        .project-inner-caption{
+                            position: unset;
+                            transform: unset;
+                            top: unset;
+                            left: unset;
+                            .reusable-heading-center{
+                                padding: 0 0%;
+                                margin-bottom: 30px;
+                                    :first-child{
+                 
+                                        font-size: 22px;
+  
+                                        
+                                    }
+                                    :nth-child(2){
+                                        text-transform: uppercase;
+                                        font-weight: 600;
+                                        font-size: 22px;
+                                        color: $primaryDarkBlue;
+                                        margin-left: 5px;
+                                        position: relative;
+                                        white-space: nowrap;
+                                        &::after{
+                                            width: 35px;
+                                            height: 2px;
+                                        }
+                                    }
+                                   
+                                   
+                                }
+    
+                                .project-tab{
+                                    
+                                    .nav{
+                                        margin-bottom: 25px;
+                                        .nav-item{
+                                            margin: 7px 7px;
+                                            .nav-link{
+                                                padding: 6px 13px;
+                                                font-size: 12px;
+                                            }
+                                        }
+                                    }
+                                    .tab-content{
+                                        .tab-pane{
+                                            .owl-carousel{
+    
+                                                .yellow-overlay-parent{
+                                                    .yellow-overlay{
+    
+                                                        .yellow-overlay-icons i{
+                                                            font-size: 16px;
+                                                            padding: 15px;
+                                                            margin: 0 4px;
+                                                        }
+    
+                                                    }
+                                                }                       
+    
+
+                                                .owl-nav{  
+                                                    .owl-prev{
+                                                        height: 80px;
+                                                        width: 20px;
+                                                    }
+                                                    .owl-next{
+                                                        height: 80px;
+                                                        width: 20px;
+                                                    }
+                                                }
+                                                .owl-stage-outer{
+                                                    .owl-stage{
+                                                        .owl-item{ 
+                                                            padding: 0 0px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                        }
+                    }
+                }
+            }
+
+
+            .choose{
+                @include generic-my;
+                .choose-outer{
+                    
+                    .choose-inner{
+                        .row{
+                            .col-md-6{
+                                .reusable-heading{
+                                    padding: 0 0%;
+                                    margin-bottom: 15px;
+                                    :first-child{
+                                    text-transform: uppercase;
+                                    font-weight: 600;
+                                    font-size: 22px;
+                                    &::after{
+                                        width: 34px;
+                                    }
+                                
+                                 }
+                                :nth-child(2){
+                                 font-size: 22px;
+                                }
+                                :nth-child(3){
+                                 margin-top: 20px;
+                                 font-size: 13px;
+                                }
+                            }
+                            }
+    
+                            .hidden-info-parent{
+                                .hidden-info-heading{
+    
+                                    h3{
+                                        font-size: 14px;
+                                        color: inherit;
+                                        margin-bottom: unset;
+                                    }
+                                    i{
+                                        margin-left: auto;
+                                        color:  inherit;
+                                        font-size: 11px;
+                          
+                                    }
+                                }
+                                .hidden-para{
+                                    display: none;
+                                    padding: 12px 16px;
+                                    border: 1px dashed $primaryGrey;
+                                    border-top: 0;
+                                    font-size: 13px;
+                                    p{
+                                        color: $primaryGrey;
+                                        margin-bottom: 8px;
+                                    }
+                                    a{
+                                        color: $primaryYellow;
+                                        font-size: 14px;
+                                        font-weight: 600;
+                                        i{
+                                            margin-left: 5px;
+                                        }
+                                    }
+                                }
+                            }
+
+                            
+                        }
+                    }
+                }
+            }
+
+
+
+            .team{
+                background-color: $teamBackGround;
+                .team-outer{
+                    .container{
+                        .team-inner{
+                            .reusable-heading-center{
+                                @include reusable-heading-center;
+                                padding: 0;
+                                :first-child{
+                                    font-size: 22px;
+                                }
+                                :nth-child(2){
+                                    font-size: 22px;
+                                    color: $primaryWhite;
+                                    &::after{
+                                        left: -24%;
+                                        width: 29px;
+                                    }
+                                }
+    
+                            }
+                            .team-member{
+                                .row{
+                                    .col-md-3{ 
+                                        margin-bottom: 40px;
+                                        .team-member-caption{
+                                            padding: 20px 0px;
+                                            h6{
+                                                font-size: 18px;
+                                                color:rgb(195, 194, 193);
+                                            }p{
+                                                margin-bottom: 0;
+                                                font-size: 15px;
+                                            }
+                                        }
+                                        .yellow-overlay-parent{
+                                            .yellow-overlay{
+                                            .overlay-icons {
+                                                ul{
+                                                    li{
+                                                        padding: 0px 25px;
+                                                        a{
+                                                            &:hover{
+                                                                text-decoration: none;
+                                                            }
+                                                            i{
+                                                                color: $primaryWhite;
+                                                                font-size: 16px;
+                                                            }
+                                                        }
+                                                    }
+                                                   
+                                                }
+                                                
+                                            }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .blog{
+                @include generic-my;
+                .blog-outer{
+                    .container{
+                        .blog-inner{
+                            .reusable-heading-center{
+                                text-align: center;
+                                padding: 0 0%;
+                                margin-bottom: 40px;
+                                :first-child{
+                                    font-size: 22px;
+                                }
+                                :nth-child(2)
+                                {
+                                    font-size: 22px;
+                                    &::after{
+                                        left: -54%;
+                                        width: 30px;
+                                    }
+                                }
+                                :nth-child(3){
+                                    font-size: 13px;
+                                    margin-top: 30px;
+                                    }
+                            }
+                            .offer-box{
+                                .row{
+                                    .col-md-4{
+                                        margin-bottom: 60px;
+                                        .offer-box-inner{
+                                            .offer-box-inner-caption{
+                                                position: relative;
+                                                border: 1px solid gainsboro;
+                                                padding: 18% 4% 5% 4%;
+                                                text-align: center;
+                                                h1{
+                                                    font-size: 18px;
+                                                    font-weight: 600;
+                                                    margin-bottom: 16px;
+                                                }
+                                                p{
+                                                    color: $primaryGrey;
+                                                    font-size: 14px;
+                                                    margin-bottom: 30px;
+                                                }
+                                                .offer-icon{
+                                                    width: 55%;
+                                                    height: 45px;
+                                                    border-radius: 26px;
+                                                    padding: 0 0px;
+                                                    i{
+                                                        font-size: 14px;
+                                                        color: $primaryWhite;
+                                                        margin-right: 14px;
+                                                        margin-bottom: 3px;
+                                                    }
+                                                    span{
+                                                        font-size: 13px;
+                                                        color: $primaryWhite;
+                                                    }
+                                                }
+                                                .read-more-btn{
+                                                    @include read-btn;
+                                                    background-color: $primaryDarkBlue;
+                                                    font-size: 14px;
+                                                    padding: 7px 13px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+    
+                    }
+                }
+            }
+
+            .review{
+                margin-bottom: 80px;
+                height: 400px;
+                position: relative;
+                .review-outer{
+                    position: static;
+                    .review-inner{
+                        .black-overlay{
+                            overflow: hidden;
+                            background-color: transparent;
+                            .review-inner-heading{
+                                margin-top: unset;
+                                .reusable-heading-center{
+                                    position: static;
+                                    transform: unset;
+                                    display: block;
+                                    padding: 0;
+                                    span{
+                                        font-size: 22px !important;
+                                    }
+                                    p{
+                                        display: none;
+                                    }
+                                    :nth-child(2){
+                                        color: $secondaryYellow;
+                                    }
+                                }
+                            }
+                            .stupid-slider{
+                                left: 50%;
+                                top: 61%;
+                                transform: translate(-50%,-50%);
+                                .owl-carousel{
+                                    .owl-stage-outer{
+                                        .owl-stage{
+                                            .owl-item{
+                                                .item{
+                                                    .stupid-slider-inner{
+                                                        margin: 0 auto;
+                                                        width: 98%;
+                                                        padding: 50px 20px;
+                                                        padding-bottom: 30px;
+                                                        background-color: rgba(0, 0, 0, 1);
+                                                        .review-img{
+                                                            width: 60px;
+                                                            height: 60px;
+                                                        }
+                                                        h5{
+                                                            font-size: 18px;
+                                                            margin-bottom: 4px;
+                                                        }
+                                                        h6{
+        
+                                                            margin-bottom: 12px;
+                                                            font-size: 15px;
+                                                            &::after{
+                                                                all: initial;
+                                                            }
+                                                        }
+                                                        p{
+                                                            margin-bottom: 0;
+                                                            font-size: 12px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .owl-dots{
+                                        .active{
+                                            span{
+                                                background-color: $primaryYellow;
+                                            }
+                                            
+                                        }
+                                    }
+                                }
+                                .owl-theme{
+                                    .owl-nav{
+                                        margin-top: unset;
+                                        button{
+        
+                                        }
+                                        i{
+        
+                                            font-size: 8px;
+                                        }
+                                        .owl-prev{
+                                            position: absolute;
+                                            top: 45%;
+                                            left: -1%;
+                                            transform: translateY(-50%);
+                                            width: 15px;
+                                            height: 15px;
+                                        }
+                                        .owl-next{
+                                            position: absolute;
+                                            top: 45%;
+                                            right: -1%;
+                                            transform: translateY(-50%);
+                                            width: 15px;
+                                            height: 15px;
+                                        }
+                                    }
+        
+                                }
+                                
+                            }
+                        }
+                        
+                    }
+                }
+            }
+
+
+        }
+    }
+
+    footer{
+        .footer{
+            .footer-outer{
+                padding: 10% 0;
+                .container{
+                    .footer-inner{
+                        .row{
+                            .col-md-3{
+                               .about-us{
+                                   .footer-heading{
+                                    @include footerHeading576px;
+                                    margin-top: unset;
+                                   }
+                                   .footer-icons{
+                                       a{
+                                           border: 1px solid $primaryGrey;
+                                           padding: 3px 7px;
+                                           justify-content: center;
+                                           i{
+                                               font-size: 11px;
+
+                                           }
+                                       }
+                                   }
+                                   li{
+                                       p{
+                                           font-size: 14px
+                                       }
+                                   }
+                               }
+    
+                               .quick-link{
+                                   ul{
+                                       margin-left: 20px
+                                   }
+                                   .footer-heading{
+                                       @include footerHeading576px;
+                                   }
+                                   li{
+                                       margin-bottom: 6px;
+                                       a{
+                                           color: $footerGrey;
+                                           font-size: 14px;
+                                       }
+                                       i{
+                                           color: $primaryYellow;
+                                           font-size: 11px;
+                                           margin-right: 5px;
+                                       }
+                                   }
+                               }
+    
+                               .company{
+                                   padding-left: 0;
+                                   margin-bottom: 0;
+                                   .footer-heading{
+                                       @include footerHeading576px;
+                                       :first-child{
+                                           &::after{
+                                               left: 29%;
+                                               width: 46px;
+                                           }
+                                       }
+                                   }
+                                   ul{
+                                       display: flex;
+                                       li{
+                                           font-size: 14px;
+                                           color: $footerGrey;
+                                           p{
+                                               margin-bottom: 5px;
+                                           }
+                                           i{
+                                               color: $primaryYellow;
+                                               margin-right: 10px;
+                                           }
+                                       }
+                                   }
+                               }
+    
+                               .gallery{
+                                   padding-left: 0;
+                                   margin-bottom: 0;
+                                   .footer-heading{
+                                       @include footerHeading576px;
+                                       :first-child{
+                                        &::after{
+                                            width: 41px;
+                                            left: 81%;
+                                        }
+                                       }
+                                   }
+                                   ul{
+                                       padding-left: 0;
+                                       margin-bottom: 7px;
+                                       margin-top: 40px;
+                                       li{
+                                           margin-right: 7px;
+                                           margin-bottom: 7px;
+                                           img{
+                                               width: 80px;
+                                               height: 80px;
+                                           }
+                                       }
+                                   }
+                               }
+    
+                            }
+                        }
+                    }
+                }
+            }
+            .copyright{
+                padding: 15px 0%;
+                .container{
+                    display: block; 
+                    ul{
+                        margin-bottom: 10px;
+                        li{
+                            color: $footerGrey;
+                            font-size: 10px;
+                            margin-right: 8px;
+                            margin-left: unset;
+                            a{
+                                color: $footerGrey;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}   
+
+
+
+
+
+
+
+
+@media (min-width: 1200px) and (max-width: 1700px ){
+    .review{
+        .review-outer{
+            position: relative;
+            .review-inner{
+                .black-overlay{
+                    overflow: hidden;
+                    @include black-overlay;
+                    .review-inner-heading{
+                        margin-top: 1.5% !important;
+                        .reusable-heading-center{
+                            @include reusable-heading-center;
+                            padding: 0 20% !important;
+                            :first-child{
+                                font-size: 26px !important;
+                            }
+                            :nth-child(2){
+                                font-size: 26px !important;
+                            }
+                            :nth-child(3)
+                            {
+                                margin-top: 12px !important;
+                                margin-bottom: 33px !important;
+                                color: #c3c2c1;
+                                font-size: 12px !important;
+                            }
+                        }
+                    }
+                    .stupid-slider{
+                        width: 100%;
+                        h4{
+                            color: white;
+                        }
+                        .owl-carousel{
+                            .owl-stage-outer{
+                                .owl-stage{
+                                    .owl-item{
+                                        .item{
+                                            .stupid-slider-inner{
+                                                margin: 0 auto;
+                                                width: 54.5%;
+                                                padding: 3.9% 2.5% !important;
+                                                padding-bottom: 1.5% !important;
+                                                .review-img{
+                                                    transform: translate(-50%,-50%);
+                                                    width: 70px !important;
+                                                    height: 70px !important ;
+                                                }
+                                                h5{
+                                                    font-size: 16px !important;
+                                                }
+                                                h6{
+                                                    margin-bottom: 20px !important;
+                                                    font-size: 13px !important;
+                                                    
+                                                }
+                                                p{
+                                                    color:#c3c2c1;
+                                                    margin-bottom: 0;
+                                                    font-size: 12px !important;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .owl-theme{
+                            .owl-nav{
+                                margin-top: unset;
+                                button{
+                                    background-color: $secondaryYellow;
+                                }
+                                i{
+                                    color: $primaryWhite;
+                                    font-size: 10px !important;
+                                }
+                                .owl-prev{
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 19% !important;
+                                    transform: translateY(-50%);
+                                    width: 26px !important;
+                                    height: 26px !important;
+                                    border-radius: 0;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                }
+                                .owl-next{
+                                    position: absolute;
+                                    top: 50%;
+                                    right: 19% !important;
+                                    transform: translateY(-50%);
+                                    width: 26px !important;
+                                    height: 26px !important;
+                                    border-radius: 0;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                }
+                            }
+
+                        }
+                        
+                    }
+                }
+                
+            }
+        }
+    }
+}
